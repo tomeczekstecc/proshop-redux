@@ -1,0 +1,64 @@
+{
+  "name": "proshop-redux",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "classnames": "^2.3.1",
+    "csstype": "^3.0.8",
+    "dom-helpers": "^5.2.1",
+    "express": "^4.17.1",
+    "history": "^4.10.1",
+    "hoist-non-react-statics": "^3.3.2",
+    "invariant": "^2.2.4",
+    "isarray": "^0.0.1",
+    "js-tokens": "^4.0.0",
+    "lodash": "^4.17.21",
+    "lodash-es": "^4.17.21",
+    "loose-envify": "^1.4.0",
+    "mini-create-react-context": "^0.4.1",
+    "nodemon": "^2.0.7",
+    "object-assign": "^4.1.1",
+    "path-to-regexp": "^1.8.0",
+    "prop-types": "^15.7.2",
+    "prop-types-extra": "^1.1.1",
+    "react": "^17.0.2",
+    "react-bootstrap": "^1.6.0",
+    "react-dom": "^17.0.2",
+    "react-is": "^16.13.1",
+    "react-lifecycles-compat": "^3.0.4",
+    "react-overlays": "^5.0.1",
+    "react-router": "^5.2.0",
+    "react-router-bootstrap": "^0.25.0",
+    "react-router-dom": "^5.2.0",
+    "react-transition-group": "^4.4.1",
+    "regenerator-runtime": "^0.13.7",
+    "resolve-pathname": "^3.0.0",
+    "scheduler": "^0.20.2",
+    "tiny-invariant": "^1.1.0",
+    "tiny-warning": "^1.0.3",
+    "uncontrollable": "^7.2.1",
+    "value-equal": "^1.0.1",
+    "warning": "^4.0.3"
+  },
+  "scripts": {
+    "start": "node backend/server.js",
+    "server": "nodemon backend/server.js",
+    "client": "npm start --prefix frontend",
+    "dev": "concurrently \"npm run server\" \"npm run client\" --names server,client"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tomeczekstecc/proshop-redux.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tomeczekstecc/proshop-redux/issues"
+  },
+  "homepage": "https://github.com/tomeczekstecc/proshop-redux#readme",
+  "devDependencies": {
+    "concurrently": "^6.2.0"
+  }
+}
