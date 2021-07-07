@@ -1,12 +1,16 @@
 {
   "name": "proshop-redux",
+  "type": "module",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "dependencies": {
+    "bcryptjs": "^2.4.3",
     "classnames": "^2.3.1",
+    "colors": "^1.4.0",
     "csstype": "^3.0.8",
     "dom-helpers": "^5.2.1",
+    "dotenv": "^10.0.0",
     "express": "^4.17.1",
     "history": "^4.10.1",
     "hoist-non-react-statics": "^3.3.2",
@@ -17,6 +21,7 @@
     "lodash-es": "^4.17.21",
     "loose-envify": "^1.4.0",
     "mini-create-react-context": "^0.4.1",
+    "mongoose": "^5.13.0",
     "nodemon": "^2.0.7",
     "object-assign": "^4.1.1",
     "path-to-regexp": "^1.8.0",
@@ -45,7 +50,9 @@
     "start": "node backend/server.js",
     "server": "nodemon backend/server.js",
     "client": "npm start --prefix frontend",
-    "dev": "concurrently \"npm run server\" \"npm run client\" --names server,client"
+    "dev": "concurrently \"npm run server\" \"npm run client\" --names server,client",
+    "data:import": "node backend/seeder",
+    "data:destroy": "node backend/seeder -d"
   },
   "repository": {
     "type": "git",
