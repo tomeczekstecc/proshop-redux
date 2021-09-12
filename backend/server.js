@@ -11,7 +11,7 @@ const app = express();
 
 connectDB();
 app.use((req, res, next) => {
-  console.log('Hello');
+
   next();
 });
 
